@@ -61,9 +61,5 @@ export const routes: Routes = [
    path:"login",
    component: LoginTemplateComponent
  },
- {
-   path:"upload",
-   component: ImageUploadComponent
- }
 
 ];
