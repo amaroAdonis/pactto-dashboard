@@ -1,0 +1,103 @@
+<div class="main-container">
+    <div class="first-block">
+        <div class="actions">
+            <button class="reset" type="reset">reset changes</button>
+            <button class="save" type="submit" disabled>save changes</button>
+        </div>
+    </div>
+    <div class="second-block">
+        <div class="info">
+            <mat-form-field>
+                <mat-label>First Name</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Last Name</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput>
+            </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Select your country</mat-label>
+                    <mat-select>
+                      <mat-option>None</mat-option>
+                      @for (country of countries; track country) {
+                        <mat-option [value]="country">{{country}}</mat-option>
+                      }
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="question">
+            <span>What is your main activity? Or activities</span>
+        </div>
+        <div class="activity">
+            <div class="video">
+                <mat-checkbox class="activities" id="video"></mat-checkbox>
+                <label for="video">Video</label>    
+            </div>
+            <div class="design">
+                <mat-checkbox class="activities" id="design"></mat-checkbox>
+                <label for="design">Design</label>    
+            </div>
+            <div class="development">
+                <mat-checkbox class="activities" id="development"></mat-checkbox>
+                <label for="development">Development</label>    
+            </div>
+            <div class="sports">
+                <mat-checkbox class="activities" id="sports"></mat-checkbox>
+                <label for="sports">Sports</label>    
+            </div>
+            <div class="medical">
+                <mat-checkbox class="activities" id="medical"></mat-checkbox>
+                <label for="medical">Medical</label>    
+            </div>
+            <div class="inspections">
+                <mat-checkbox class="activities" id="inspections"></mat-checkbox>
+                <label for="inspections">Inspections</label>    
+            </div>        
+            <mat-form-field>
+                <mat-label>Other</mat-label>
+                <input matInput>
+            </mat-form-field>
+
+        </div>
+        <div class="user-password">
+            <span>User handle and password</span>
+            <mat-form-field>
+                <mat-label>User name, your Pactto handle (e.d. johnsmith)</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput [type]="hide() ? 'password' : 'text'" />
+                <button
+                  mat-icon-button
+                  matSuffix
+                  (click)="clickEvent($event)"
+                  [attr.aria-label]="'Hide password'"
+                  [attr.aria-pressed]="hide()"
+                >
+                  <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Confirm Password</mat-label>
+                <input matInput [type]="hide() ? 'password' : 'text'" />
+                <button
+                  mat-icon-button
+                  matSuffix
+                  (click)="clickEvent($event)"
+                  [attr.aria-label]="'Hide password'"
+                  [attr.aria-pressed]="hide()"
+                >
+                  <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+        <div class="delete-info">
+            <span>To delete your Pactto account and remove your data permanently from all Pactto apps and services, please <a href="#" target="_blank">click here.</a></span>
+        </div>
+    </div>
+</div>

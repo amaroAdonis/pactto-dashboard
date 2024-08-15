@@ -1,0 +1,108 @@
+<div class="main-container">
+    <div class="header-actions">
+        <div class="left-actions">
+            <span>review settings</span>
+        </div>
+        <div class="right-actions">
+            <button class="reset" type="reset">reset changes</button>
+            <button class="save" type="submit" disabled>save changes</button>
+        </div>
+    </div>
+    <div class="body-actions">
+        <div class="first-section">
+            <div class="left">
+                <div class="check1">
+                    <mat-checkbox></mat-checkbox>
+                    <label for="show">Show logo</label>
+                </div>
+                <div class="check2">
+                    <mat-checkbox></mat-checkbox>
+                    <label for="show">Start with microphone enabled</label>
+                </div>
+                <div class="check3">
+                    <mat-checkbox></mat-checkbox>
+                    <label for="show">Start with camera enabled</label>
+                </div>
+                <div class="check4">
+                    <mat-checkbox></mat-checkbox>
+                    <label for="show">Videos loaded start muted</label>
+                </div>
+                <div class="check5">
+                    <mat-checkbox></mat-checkbox>
+                    <label for="show">Notes disappear after 1 second</label>
+                </div>
+                <div class="check6">
+                    <mat-checkbox></mat-checkbox>
+                    <label for="show">Trackpad: pinch to zoom</label>
+                </div>
+                <div class="check7">
+                    <mat-checkbox></mat-checkbox>
+                    <label for="show">Trackpad: reposition with 2-finger swipe</label>
+                </div>
+            </div>
+            <div class="right">
+                <div class="upload">
+                    <image-upload></image-upload>
+                </div>
+            </div>
+        </div>
+        <div class="second-section">
+            <span>Brush size for tools</span>
+            <mat-slider min="1" max="8" step="1" showTickMarks discrete [displayWith]="formatLabel">
+                <input matSliderThumb>
+              </mat-slider>               
+        </div>
+        <div class="third-section">
+            <span>Note color options</span>
+            <div class="color-inputs">
+                <div class="color01">
+                    <color-input label="Color 1" inputValue="#fff"/>
+                </div>
+                <div class="color02">
+                    <color-input label="Color 2" inputValue="#fff"/>
+                </div>
+                <div class="color03">
+                    <color-input label="Color 3" inputValue="#fff"/>
+                </div>
+                <div class="color04">
+                    <color-input label="Color 4" inputValue="#fff"/>
+                </div>
+            </div>
+        </div>
+        <div class="fourth-section">
+            <div class="camera">
+                <label for="camera">Camera</label>
+                <div class="border">
+                    <select id="camera">
+                        <option> </option>
+                        <option>Camera 1</option>
+                        <option>Camera 2</option>
+                        <option>Camera 3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="microphone">
+                <label for="microphone">Microphone</label>
+                <div class="border">
+                    <select id="microphone">
+                        <option> </option>
+                        <option>Microphone 1</option>
+                        <option>Microphone 2</option>
+                        <option>Microphone 3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="speakers">
+                <label for="speakers">Speakers</label>
+                <div class="border">
+                    <select id="speakers">
+                        <option> </option>
+                        <option>Speakers 1</option>
+                        <option>Speakers 2</option>
+                        <option>Speakers 3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,157 @@
+:host{
+    .main-container{
+        // width: max-content;
+
+        
+        .first-block{
+            padding: 32px;
+            .welcome{
+
+                h1{
+                    font-size: 20px;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 500;
+                    color: #ffffff;
+                    padding-bottom: 20px;
+                    margin: 0;
+
+    
+                }
+            }
+            .to-do-list{
+                .list{
+                    padding: 0;
+                    margin: 0;
+                    
+                    li{
+                        list-style-type: none;
+                        margin-bottom: 12px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: left;
+                        
+                        
+                        
+                        
+                        .todo{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            background-color: #626262;
+                            color: #ffffff;
+                            font-family: "Roboto", sans-serif;
+                            text-transform: uppercase;
+                            font-size: 9px;
+                            border-radius: 8px;
+                            font-weight: 500;
+                            width: 38px;
+                            text-align: center;
+                            padding: 2px 0 2px 0;
+                            
+                            
+    
+                        }
+                        .text{
+                            color: #b8b8b8;
+                            font-family: "Roboto";
+                            font-weight: 500;
+                            font-size: 14px;
+                            padding-left: 10px;
+                            a{
+                                color: #1dbba5;
+                            }
+                            
+                            
+    
+                        }
+    
+                    }
+                }
+            }
+        }
+        .uploads{
+            padding: 32px;
+            .title{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                margin: 22px 0;
+                padding-bottom: 20px;
+                h1{
+                    font-size: 32px;
+                    color: #ffffff;
+                    font-family: "Roboto";
+                    margin: 0;
+                    
+                    
+
+                }
+                .button{
+                    
+                    background-color: #1dbba5;
+                    display: grid;
+                    border-radius: 25px;
+                    min-width: 64px;
+                    input[type="file"]{
+                        display: none;
+                    }
+                    label{
+                        cursor: pointer;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        text-transform: uppercase;
+                        font-family: "Roboto", sans-serif;
+                        font-size: 14px;
+                        padding: 15px 15px 15px 0;
+                        letter-spacing: 1px;
+                        color: #232225;
+                        font-weight: 500;
+                        .material-symbols-outlined{
+                            font-size: 16px;
+                            padding: 0 10px;
+                        }
+                    }
+                    
+                    
+                }
+
+            }
+            .search-area{
+                .search-bar{
+                    display: flex;
+                    flex-direction: row;
+                    padding: 16px;
+                    border: 1px solid #b8b8b8;;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    
+                    .material-symbols-outlined{
+                        color: #b8b8b8;
+
+                    }
+                    .search-input{
+                        width: 100%;
+                        outline: none;
+                        border: none;
+                        background: transparent;
+                        color: #b8b8b8;
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        font-weight: 600;
+                        
+
+                    }
+                    
+
+                }
+                .display-videos{
+                    
+                }   
+            }
+        }
+        
+    }
+}

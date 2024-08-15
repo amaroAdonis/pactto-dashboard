@@ -1,0 +1,76 @@
+:host{
+    .main-container{
+        .header-actions{
+            padding: 24px 32px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+           
+
+            .left-actions{
+                .button{
+                    margin: 16px 0;
+                    background-color: #1dbba5;
+                    display: grid;
+                    border-radius: 25px;
+                    width: 172px;
+                    height: 48px;
+                    input[type="file"]{
+                        display: none;
+                    }
+                    label{
+                        cursor: pointer;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        text-transform: uppercase;
+                        font-family: "Roboto", sans-serif;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                        color: #232225;
+                        font-weight: 600;
+                        .material-symbols-outlined{
+                            font-size: 16px;
+                            padding: 0 10px;
+                        }
+                    }
+                    
+                    
+                }
+            }
+            .right-actions{
+                display: flex;
+                flex-direction: row;
+                gap: 12px;
+
+                button{
+                    border-radius: 25px;
+                    height: 48px;
+                    background: #B8B8B8;
+                    color: #181818;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    min-width: 172px;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 14px;
+                    border: none;
+                    cursor: pointer;
+        
+                }
+
+                .save{
+                    opacity: 0.2;
+                }
+
+                .payment{
+                    background-color: #1dbba5;
+                }
+
+            }
+
+        }
+    }
+}

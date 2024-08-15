@@ -1,0 +1,62 @@
+:host{
+    .main-container{
+        padding: 32px;
+        .first-block{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .title{
+                justify-content: space-between;
+                width: 100%;
+                margin: 22px 0;
+                padding-bottom: 20px;
+                h1{
+                    font-size: 32px;
+                    color: #ffffff;
+                    font-family: "Roboto";
+                    margin: 0;
+                    
+
+                }
+        
+            }
+            .search-area{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .search-bar{
+                    display: flex;
+                    flex-direction: row;
+                    padding: 16px;
+                    border: 1px solid #b8b8b8;;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    
+                    .material-symbols-outlined{
+                        color: #b8b8b8;
+
+                    }
+                    .search-input{
+                        width: 100%;
+                        outline: none;
+                        border: none;
+                        background: transparent;
+                        color: #b8b8b8;
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        font-weight: 600;
+                        
+
+                    }
+                    
+
+                }
+                .display-videos{
+
+                }
+
+            }
+
+        }
+    }
+}

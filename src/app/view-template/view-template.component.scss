@@ -1,0 +1,20 @@
+:host{
+    .main-container{
+        display: flex;
+        flex-direction: row;
+        background-color: #232225;
+
+        .side-bar{
+            overflow: auto;
+            background-color: #2f2f2f;
+           
+        }
+
+        .body-content{
+            overflow: auto;
+            flex: 1;
+            
+        }
+  
+    }
+}

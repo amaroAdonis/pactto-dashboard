@@ -1,0 +1,215 @@
+:host{
+    .main-container{
+        display: flex;
+        font-family: "Roboto", sans-serif;
+        flex-direction: column;
+        .header-actions{
+            padding: 24px 32px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .left-actions{
+                span{
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    font-family: "Roboto", sans-serif;
+                    color: #FFFFFF;
+
+                }
+            }
+            .right-actions{
+                display: flex;
+                flex-direction: row;
+                gap: 12px;
+
+                button{
+                    border-radius: 25px;
+                    height: 48px;
+                    background: #B8B8B8;
+                    color: #181818;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    min-width: 172px;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 14px;
+                    border: none;
+                    cursor: pointer;
+        
+                }
+
+                .reset{
+
+                }
+
+                .save{
+                    opacity: 0.2;
+                }
+
+            }
+
+        }
+        .body-actions{
+            padding: 24px 32px;
+            gap: 16px;
+            display: flex;
+            flex-direction: column;
+
+            .first-section{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .left{
+                    display: flex;
+                    flex-direction: column;
+                    div{
+                        height: 40px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        label{
+                            font-family: "Roboto", sans-serif;
+                            color: #FFFFFF;
+                            font-size: 16px;
+                            margin-left: 10px;
+                            
+                        }
+                        input{
+                            height: 18px;
+                            width: 18px;
+                            &:hover{
+                                cursor: pointer;
+                                
+                            }
+                        }
+                        
+                    }
+                    
+
+                }
+
+                .right{
+                    .upload{
+                        #avatar {
+                            background-color: antiquewhite;
+                            height: 200px;
+                            width: 200px;
+                            border: 3px solid #0af;
+                            border-radius: 50%;
+                            transition: background ease-out 200ms;
+                          }
+                          
+                          #preview {
+                            position: relative;
+                            
+                          }
+
+                          input[type="file"] {
+                            display: none;
+                          }
+                          
+                          
+                    }
+
+                }
+
+            }
+
+            .second-section{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                height: 48px;
+                span{
+                    font-family: 'Roboto', sans-serif;
+                    margin-right: 20px;
+                    color: #EEEEEE;
+                    font-size: 14px;
+                }
+
+                input{
+                    width: 160;
+                    height: 44px;
+
+                }
+            }
+
+            .third-section{
+                display: flex;
+                flex-direction: column;
+                height: 134px;
+                justify-content: center;
+                gap: 6px;
+                span{
+                    font-family: 'Roboto', sans-serif;
+                    color: #EEEEEE;
+                    font-size: 14px;
+                    
+
+                }
+
+                .color-inputs{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+                }
+
+            }
+
+            .fourth-section{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 24px;
+                div{
+                    
+                    label{
+                        font-family: "Roboto", sans-serif;
+                        color: #EEEEEE;
+                        font-size: 14px;
+                        height: 30px;
+                    }
+                    div{
+                        border: 1px solid #FFFFFF99;
+                        border-radius: 5px;
+                        width: 212px;
+                        height: 54px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0 16px;
+
+                        select{
+                            background-color: transparent;
+                            width: 214px;
+                            height: 52px;
+                            border: none;
+                            color: #FFFFFF99;
+                        }
+                    }
+                }
+
+                .camera{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .microphone{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .speakers{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            
+
+        }
+    
+    }
+}

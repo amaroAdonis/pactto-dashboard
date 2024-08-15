@@ -1,0 +1,94 @@
+:host{
+    .main-container{
+        padding: 32px;
+        .first-block{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            justify-content: left;
+            .subscription-status{
+                font-family: "Roboto", sans-serif;
+                font-size: 14px;
+                flex-direction: row;
+                font-weight: 300;
+                gap: 32px;
+                .text{
+                    display: flex;
+                    flex-direction: row;
+                    p{
+                        margin: 0 4px 0 0;
+                        color: #6E6E6E;
+                    }
+                    .white{
+                        color: #FFFFFF;
+                    }
+                }   
+            }
+            .subscription-button{
+                button{
+                    border-radius: 25px;
+                    height: 48px;
+                    background: #B8B8B8;
+                    color: #181818;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    width: 312px;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 14px;
+                    border: none;
+                    cursor: pointer;
+        
+                }
+
+            }
+            .list-title{
+                p{
+                    font-family: "Roboto", sans-serif;
+                    font-size: 14px;
+                    color: #E2E2E2;
+                    letter-spacing: .14px;
+                    font-weight: 300;
+
+                }
+            }
+            .list{
+                ul{
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    
+                    li{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        height: 32px;
+
+                        .material-symbols-outlined{
+                            color: #1DBAA5;
+                            font-size: 20px;
+                            
+                        }
+                        .text{
+                            font-family: "Roboto", sans-serif;
+                            font-size: 14px;
+                            color: #E2E2E2;
+                            letter-spacing: .14px;
+                            font-weight: 400;
+                            padding-left: 10px;
+                            a{
+                                color: #E2E2E2;
+                                &:hover{
+                                    color: #1DBAA5;
+                                }
+                            }
+                        }
+                    
+
+
+                    }
+                }
+            }
+        }
+    }
+} 

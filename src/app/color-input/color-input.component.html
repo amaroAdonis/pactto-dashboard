@@ -1,0 +1,8 @@
+<div class="color-input" [ngClass]="{'focused': focused}">
+    <div class="fake-container"></div>
+    <div class="label">{{label}}</div>
+    <div class="content-pushing-input">
+        <input type="text" id="color1" [formControl]="color" (focus)="onFocus($event)" (blur)="onFocusOut($event)">
+        <div class="round-color" [ngStyle]="{'background': color.value}"></div>
+    </div>
+</div>

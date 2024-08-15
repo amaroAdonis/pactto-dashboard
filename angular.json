@@ -5,7 +5,9 @@
   "projects": {
     "dashboard-pactto": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {"@schematics/angular:component": {
+          "style": "scss"
+        }},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -27,7 +29,7 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -97,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "98c9708b-8d24-42ec-8886-2890be87d046"
   }
 }

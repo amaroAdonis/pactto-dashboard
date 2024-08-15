@@ -1,0 +1,97 @@
+:host{
+    .main-container{
+        padding: 32px;
+        height: 100vh;
+        .first-block{
+            .uploads{
+                .title{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin: 22px 0;
+                    padding-bottom: 20px;
+                    h1{
+                        font-size: 32px;
+                        color: #ffffff;
+                        font-family: "Roboto";
+                        margin: 0;
+                        
+                        
+    
+                    }
+                    .button{
+                        
+                        background-color: #1dbba5;
+                        display: grid;
+                        border-radius: 25px;
+                        min-width: 64px;
+                        input[type="file"]{
+                            display: none;
+                        }
+                        label{
+                            cursor: pointer;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            text-transform: uppercase;
+                            font-family: "Roboto", sans-serif;
+                            font-size: 14px;
+                            padding: 15px 15px 15px 0;
+                            letter-spacing: 1px;
+                            color: #232225;
+                            font-weight: 500;
+                            .material-symbols-outlined{
+                                font-size: 16px;
+                                padding: 0 10px;
+                            }
+                        }
+                        
+                        
+                    }
+    
+                }
+                .obs{
+                    color: #6e6e6e;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 14px;
+                }
+                .search-area{
+                    .search-bar{
+                        margin-top: 16px;
+                        display: flex;
+                        flex-direction: row;
+                        padding: 16px;
+                        border: 1px solid #b8b8b8;;
+                        border-radius: 5px;
+                        font-size: 14px;
+                        
+                        .material-symbols-outlined{
+                            color: #b8b8b8;
+    
+                        }
+                        .search-input{
+                            width: 100%;
+                            outline: none;
+                            border: none;
+                            background: transparent;
+                            color: #b8b8b8;
+                            text-transform: capitalize;
+                            font-size: 16px;
+                            font-weight: 600;
+                            
+    
+                        }
+                        
+    
+                    }
+                    .display-videos{
+                        
+                    }   
+                }
+            }
+
+        }
+    }
+}

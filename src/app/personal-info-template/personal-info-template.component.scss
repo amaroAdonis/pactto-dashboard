@@ -1,0 +1,107 @@
+:host{
+    .main-container{
+        .first-block{
+            .actions{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                gap: 12px;
+                padding: 24px 32px;
+
+                button{
+                    border-radius: 25px;
+                    height: 48px;
+                    color: #181818;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    min-width: 172px;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 14px;
+                    border: none;
+                    cursor: pointer;
+        
+                }
+
+                .reset{
+                    background: #B8B8B8;
+                }
+
+                .save{
+                    background-color: #1DBAA5;
+                    
+                }
+
+            }
+        }
+        .second-block{
+            padding: 0 32px 24px;
+            .info{
+                display: flex;
+                flex-direction: column;
+                width: 50vw;
+            }
+
+            .question{
+                font-family: "Roboto", sans-serif;
+                color: #FFFFFF;
+                margin: 32px 0 8px;
+                font-size: 16px;
+
+            }
+
+            .activity{
+                display: flex;
+                flex-direction: column;
+                width: 50vw;
+                margin-bottom: 32px;
+
+                div{
+                    margin-top: 8px;
+                    height: 40px;
+                }
+
+                label{
+                    font-family: "Roboto", sans-serif;
+                    color: #FFFFFF;
+                }
+
+                .inspections{
+                    margin-bottom: 16px;
+                }
+                
+
+            }
+
+            .user-password{
+                display: flex;
+                flex-direction: column;
+                width: 50vw;
+
+                span{
+                    font-family: "Roboto", sans-serif;
+                    color: #FFFFFF;
+                    margin: 32px 0 8px;
+                    font-size: 16px;
+                }
+                
+            }
+
+            .delete-info{
+                margin: 32px 0 8px;
+                span{
+                    font-family: "Roboto", sans-serif;
+                    font-size: 13px;
+                    color: #FFFFFF;
+
+                    a{
+                        color: #E2E2E2;
+                        &:hover{
+                            color: #1DBAA5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
